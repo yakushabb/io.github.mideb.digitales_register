@@ -20,7 +20,7 @@ modules:
   - name: libjsoncpp
     buildsystem: cmake-ninja
     config_opts:
-      - -DCMAKE_BUILD_TYPE=release
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DBUILD_SHARED_LIBS=ON
     sources:
       - type: archive
@@ -49,6 +49,6 @@ modules:
       - ln -s /app/digitales_register/digitales_register /app/bin/digitales_register
     sources:
       - type: archive
-        url: https://github.com/miDeb/digitales_register/releases/download/v8.2.6/digitales_register-linux-x86_64.tar.gz
+        url: https://github.com/miDeb/digitales_register/releases/download/v8.2.8/digitales_register-linux-x86_64.tar.gz
         dest: digitales_register
-        sha256: 106816ac96709dcdae54274ea5fc4a7f70410c8b465d3de35a445155da0d5db9
+        sha256: 62003791f9d3315c7ac110dc45db3fa3ad1f7eb309cea97d0357232fa9604f90
