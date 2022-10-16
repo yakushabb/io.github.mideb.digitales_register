@@ -20,7 +20,7 @@ modules:
   - name: libjsoncpp
     buildsystem: cmake-ninja
     config_opts:
-      - -DCMAKE_BUILD_TYPE=release
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DBUILD_SHARED_LIBS=ON
     sources:
       - type: archive
