@@ -18,14 +18,14 @@ finish-args:
 
 modules:
   - name: libjsoncpp
-    buildsystem: cmake-ninja
+    buildsystem: meson
     config_opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-      - -DBUILD_SHARED_LIBS=ON
+      - --default-library=shared
     sources:
       - type: archive
-        url: https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.7.5.tar.gz
-        sha256: 4338c6cab8af8dee6cdfd54e6218bd0533785f552c6162bb083f8dd28bf8fbbe
+        url: https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz
+        sha256: f409856e5920c18d0c2fb85276e24ee607d2a09b5e7d5f0a371368903c275da2
 
   # Not the newest libsecret version; needed until https://gitlab.gnome.org/GNOME/libsecret/-/issues/58 is fixed.
   - name: libsecret
@@ -49,6 +49,6 @@ modules:
       - ln -s /app/digitales_register/digitales_register /app/bin/digitales_register
     sources:
       - type: archive
-        url: https://github.com/miDeb/digitales_register/releases/download/v8.2.9/digitales_register-linux-x86_64.tar.gz
+        url: https://github.com/miDeb/digitales_register/releases/download/v8.2.10/digitales_register-linux-x86_64.tar.gz
         dest: digitales_register
-        sha256: 3561bbd1b679221bcc19d97e8baf25d80a35723341375c3e48f5c4d935ac2c45
+        sha256: 36c5851e2eb76f900edbcc6ed06e99ca89b60fde9c07ee6e264033fb50a1cc9f
