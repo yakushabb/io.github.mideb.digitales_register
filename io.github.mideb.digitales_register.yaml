@@ -1,6 +1,6 @@
 app-id: io.github.mideb.digitales_register
 runtime: org.gnome.Platform
-runtime-version: "41"
+runtime-version: "43"
 sdk: org.gnome.Sdk
 command: digitales_register
 finish-args:
@@ -20,7 +20,6 @@ modules:
   - name: libjsoncpp
     buildsystem: meson
     config_opts:
-      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - --default-library=shared
     sources:
       - type: archive
