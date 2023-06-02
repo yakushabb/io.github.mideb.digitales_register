@@ -48,6 +48,6 @@ modules:
       - ln -s /app/digitales_register/digitales_register /app/bin/digitales_register
     sources:
       - type: archive
-        url: https://github.com/miDeb/digitales_register/releases/download/v8.2.10/digitales_register-linux-x86_64.tar.gz
+        url: https://github.com/miDeb/digitales_register/releases/download/v8.2.11/digitales_register-linux-x86_64.tar.gz
         dest: digitales_register
-        sha256: 36c5851e2eb76f900edbcc6ed06e99ca89b60fde9c07ee6e264033fb50a1cc9f
+        sha256: a686666904ee6d607ebc90a5b90851f67410d5059cbdd9f16d8ac67e1001dab5
