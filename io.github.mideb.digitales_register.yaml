@@ -1,6 +1,6 @@
 app-id: io.github.mideb.digitales_register
 runtime: org.gnome.Platform
-runtime-version: "43"
+runtime-version: "46"
 sdk: org.gnome.Sdk
 command: digitales_register
 finish-args:
