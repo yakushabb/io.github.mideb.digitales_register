@@ -40,6 +40,7 @@ modules:
       - install -Dm644 digitales_register/digitales_register.desktop /app/share/applications/io.github.mideb.digitales_register.desktop
       - install -Dm644 digitales_register/digitales_register.metainfo.xml /app/share/appdata/io.github.mideb.digitales_register.metainfo.xml
       - install -Dm644 digitales_register/icon.png /app/share/icons/hicolor/128x128/apps/io.github.mideb.digitales_register.png
+      - sed -i 's|https://schule.digitalesregister.it|schule.digitalesregister.it|' /app/share/appdata/io.github.mideb.digitales_register.metainfo.xml
       - rm digitales_register/digitales_register.desktop
       - rm digitales_register/digitales_register.metainfo.xml
       - rm digitales_register/icon.png
